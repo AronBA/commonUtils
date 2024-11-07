@@ -33,6 +33,9 @@ public final  class StringUtils {
      * @return true if the string has content, false otherwise
      */
     public static boolean hasContent(final String string) {
+        if (string == null) {
+            return false;
+        }
         String noSpaceString = string.strip();
         return !isNullOrEmpty(noSpaceString);
     }

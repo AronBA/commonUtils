@@ -49,7 +49,7 @@ public class Line {
      * @throws ArrayIndexOutOfBoundsException if the index is out of range
      */
     public Word getWord(int i) {
-        return words[i + 1];
+        return words[i - 1];
     }
 
     /**
